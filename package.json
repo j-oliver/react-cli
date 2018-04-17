@@ -1,0 +1,7 @@
+{
+  "name": "react-cli",
+  "version": "1.0.0",
+  "description": "A simple cli component that is used to get user input",
+  "main": "index.js",
+  "license": "MIT"
+}
