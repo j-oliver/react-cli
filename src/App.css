@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'UbuntuMono-R';
+  src: url(./assets/UbuntuMono-R.ttf) format('truetype');
+}
+
+.App {
+  font-family: UbuntuMono-R;
+  text-align: center;
+}
+
+.cli {
+  margin: 5px;
+  height: 500px;
+}
+
+.prompt {
+  outline: none;
+  text-align: left;
+  color: white;
+  background-color: black;
+  padding-left: 5px;
+}
+
+.prompt:focus {
+  animation: 1s highlightPrompt;
+  animation-fill-mode: forwards;
+}
+
+.promptsign {
+  font-size: 14px;
+  padding-right: 8px;
+}
+
+.cli-line {
+  text-align: left;
+  color: white;
+  background-color: black;
+  padding-left: 5px;
+}
+
+.highlightedLetter {
+  position: absolute;
+  display: inline-block;
+  width: 8px; /* width of one character in UbuntuMono-R */
+  background-color: white;
+  height: 15px;
+  opacity: 0.5;
+
+  animation: 0.5s blinking-caret infinite step-end;
+}
+
+@keyframes highlightPrompt {
+    0%{background: white;}
+    50%{background: black;}
+}
+
+@keyframes blinking-caret {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+}
